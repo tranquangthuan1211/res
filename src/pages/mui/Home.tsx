@@ -214,7 +214,7 @@ const Home = () => {
         }}
       >
         <Typography variant="body2" color="text.secondary">
-          © 2025 ReactFood. Tất cả quyền được bảo lưu.
+          © 2025 ReactFood. Tất cả quyền được bảo lưu bởi Trần Quang Thuận.
         </Typography>
       </Box>
     </Box>

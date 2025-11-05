@@ -100,13 +100,6 @@ const reducer = (state: State, action: Action): State =>
 export interface AuthContextType extends State {
   updateUser: (user: Partial<User>) => void;
   signIn: (email: string, password: string) => Promise<User>;
-  signUp?: (
-    name: string,
-    email: string,
-    password: string,
-    address: string,
-    phone: string,
-  ) => Promise<{ message: string }>;
   signOut: () => Promise<void>;
 }
 
@@ -114,7 +107,6 @@ export const AuthContext = createContext<AuthContextType>({
   ...initialState,
   updateUser: () => {},
   signIn: async () => Promise.resolve({} as User),
-  signUp: async () => Promise.resolve({ message: "not implemented" }),
   signOut: async () => Promise.resolve(),
 });
 
